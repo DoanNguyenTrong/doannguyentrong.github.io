@@ -1,6 +1,8 @@
 ---
 title: Opera VPN trên Android và iOS sẽ ngưng hoạt động từ tháng 5/2018
 date: 2018-04-20 01:32:00 Z
+tags:
+- opera vpn
 ---
 
 Sau hai năm hoạt động ở chế độ miễn phí, dịch vụ cung cấp mạng riêng ảo (VPN) của Opera sẽ chính thức đóng cửa trên hai nền tảng Android và iOS. Opera VPN không phải dịch vụ cung cấp VPN đầu tiên cho người dùng nhưng nó là một trong những dịch vụ miễn phí từ một hãng nổi tiếng và có chặn quảng cáo. Bên cạnh mô hình miễn phí thì Opera cũng cung cấp dịch vụ trả phí cho các thành viên Opera Gold và họ sẽ được chuyển sang một dịch vụ VPN khác.
