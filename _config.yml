@@ -2,6 +2,9 @@
 title: Doannguyentrong.Github.Io
 timezone: UTC
 collections:
+  goc-nhin:
+    title: Góc nhìn
+    output: true
   posts:
     title: Posts
     output: true
