@@ -1,7 +1,8 @@
 ---
 layout: home
 title: Articles
-pagination: 
-  enabled: true
-  category: Articles
+category: Articles
+# pagination: 
+#   enabled: true
+#   category: Articles
 ---

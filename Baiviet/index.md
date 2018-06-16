@@ -1,7 +1,8 @@
 ---
 layout: home
 title: Bài viết
-pagination: 
-  enabled: true
-  category: Baiviet
+category: Baiviet
+# pagination: 
+#   enabled: true
+#   category: Baiviet
 ---

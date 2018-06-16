@@ -1,7 +1,8 @@
 ---
 layout: home
 title: Engineering
-pagination: 
-  enabled: true
-  category: Engineering_en
+category: Engineering_en
+# pagination: 
+#   enabled: true
+#   category: Engineering_en
 ---

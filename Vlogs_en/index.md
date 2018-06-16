@@ -1,7 +1,8 @@
 ---
 layout: home
 title: Vlogs[EN]
-pagination: 
-  enabled: true
-  category: Vlogs_en
+category: Vlogs_en
+# pagination: 
+#   enabled: true
+#   category: Vlogs_en
 ---
