@@ -16,28 +16,36 @@
 title: Doan Nguyen
 email: nguyentrongdoan.0@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is my personal webpage.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://doannguyentrong.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: DoanNguyen
+twitter_username: doannguyen
 github_username:  doannguyen
+
+# Enable future posts (this is to track a bug with --drafts causing issues)
+future: true
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
-  - jekyll-feed
+  - jekyll-paginate-v2
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  
+# Due to us using the categories for posts then it is advisable to explicitly specify a 
+# permalink structure for the site. Otherwise Jekyll attempts to organize the pages in folders
+# by the category names and it doesn't understand multi-categories to well :/
+permalink: /:categories/:title.html
+#permalink: pretty
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: '/page:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
