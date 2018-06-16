@@ -29,7 +29,7 @@ future: true
 markdown: kramdown
 theme: minima
 plugins:
-  # - jekyll-paginate-v2
+  - jekyll-paginate-v2
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -41,15 +41,11 @@ permalink: /:categories/:title.html
 #permalink: pretty
 
 # Pagination Settings
-gems: [jekyll-paginate]
-
-paginate: 5
-permalink: pretty
-# pagination:
-#   enabled: true
-#   per_page: 10
-#   permalink: '/page:num/'
-#   title: ' - page :num'
-#   limit: 0
-#   sort_field: 'date'
-#   sort_reverse: true
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: '/page:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
