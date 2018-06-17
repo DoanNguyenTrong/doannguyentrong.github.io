@@ -129,7 +129,11 @@ html, body {
 .fa-youtube:hover {
     color: #d5d5d5;
 }
-
+/* left and righ of a post */
+.post-text{
+    padding-left: 20%;
+    padding-right: 20%;
+}
 footer {
     background-color: #3f3f3f;
     color: #d5d5d5;
@@ -190,6 +194,11 @@ footer {
     .display-4 {
         font-size: 300%;
     }
+    /* left and righ of a post */
+    .post-text{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 
 }
 
@@ -224,6 +233,11 @@ footer {
         margin: auto;
         text-align: center;
     }
+    /* left and righ of a post */
+    .post-text{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
 @media (max-width: 624px){
     .carousel-caption {
@@ -248,6 +262,11 @@ footer {
     .social a {
         font-size: 2em;
         padding: 1rem;
+    }
+    /* left and righ of a post */
+    .post-text{
+        padding-left: 0;
+        padding-right: 0;
     }
 
 }
