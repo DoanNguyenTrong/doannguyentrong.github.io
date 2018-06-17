@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="http://localhost:4000/css/style.css">
     <!-- <link rel="icon" href="http://localhost:4000/images/favicon.png"> -->
     <link rel="shortcut icon" type="image/png" href="/images/favicon.png" >
-    <link rel="canonical" href="http://localhost:4000/404">
+    <link rel="canonical" href="http://localhost:4000/Engineering_vi/">
     <link rel="alternate" type="application/rss+xml" title="Doan Nguyen" href="http://localhost:4000/feed.xml">
 </head>
 <body>
@@ -66,27 +66,31 @@
 </header>
     <!-- break-navbar avoid overlap of vavigation bar and the content below -->
         <div class="break-navbar"> 
-            <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
+            <!-- Just some nice to have styles for the pager buttons -->
+<style>
+  ul.pager { text-align: center; list-style: none; }
+  ul.pager li {display: inline;border: 1px solid black; padding: 10px; margin: 5px;}
 </style>
 
-<div class="container">
-  <h1>404</h1>
+<div class="container padding">
+  <div class="row welcome padding text-center">
+      
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+      <ul class="list-group">
+        <!-- 
+            Here is the main paginator logic called.
+            All calls to site.posts should be replaced by paginator.posts 
+        -->
+        
+      </ul>
+
+  </div>
+
+  
+
+  <!-- <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p> -->
+
 </div>
-
         </div>
         
 </body>

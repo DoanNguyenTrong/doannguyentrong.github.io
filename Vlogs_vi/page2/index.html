@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="http://localhost:4000/css/style.css">
     <!-- <link rel="icon" href="http://localhost:4000/images/favicon.png"> -->
     <link rel="shortcut icon" type="image/png" href="/images/favicon.png" >
-    <link rel="canonical" href="http://localhost:4000/404">
+    <link rel="canonical" href="http://localhost:4000/Vlogs_vi/page2/">
     <link rel="alternate" type="application/rss+xml" title="Doan Nguyen" href="http://localhost:4000/feed.xml">
 </head>
 <body>
@@ -66,27 +66,55 @@
 </header>
     <!-- break-navbar avoid overlap of vavigation bar and the content below -->
         <div class="break-navbar"> 
-            <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
+            <!-- Just some nice to have styles for the pager buttons -->
+<style>
+  ul.pager { text-align: center; list-style: none; }
+  ul.pager li {display: inline;border: 1px solid black; padding: 10px; margin: 5px;}
 </style>
 
-<div class="container">
-  <h1>404</h1>
+<div class="container padding">
+  <div class="row welcome padding text-center">
+      
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+      <ul class="list-group">
+        <!-- 
+            Here is the main paginator logic called.
+            All calls to site.posts should be replaced by paginator.posts 
+        -->
+        
+          <li class="list-group-item">
+              <h2>
+                <a class="post-link" href="/vlogs_vi/baiviet/Porsche-918-Spyder.html">Porsche 918 Spyder</a>
+              </h2>
+            <!-- Post truncated -->
+            <span class="font-weight-bold">Oct 19, 2016</span>
+            <br>
+            <div class="border-top">
+              From Wikipedia, the free encyclopedia The Porsche 918 Spyder is a mid-engined plug-in hybrid sports car by Porsche.[3] The Spyder is powered by a naturally aspirated 4.6-litre V8 engine, developing 608 metric horsepower (447 kW), with two electric motors delivering an additional 279 metric horsepower (205 kW) for a combined output of 887 metric horsepower (652 kW). The 918 Spyder’s 6.8 kWh lithium-ion battery pack delivers an all-electric range of 19 km (12 mi) under EPA’s five-cycle tests.[1] The car has a top speed of around 340 km/h (210 mph).[4] The 918 Spyder is a limited edition Hypercar, with 918 units manufactured and sold as a 2014 model year. Production began on September 18, 2013, with deliveries initially scheduled to begin in December 2013.[5][6] The starting price was US$847,000.[4] The 918 Spyder was sold out in December 2014. The country...
+              <a href="/vlogs_vi/baiviet/Porsche-918-Spyder.html">read more</a>
+            </div>
+            <hr class="my-4">
+          </li>
+          
+        
+      </ul>
+
+  </div>
+
+  
+  <ul class="pager">
+      
+      <li class="previous">
+          <a href="/Vlogs_vi/">&larr; Newer Posts</a>
+      </li>
+      
+      
+  </ul>
+  
+
+  <!-- <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p> -->
+
 </div>
-
         </div>
         
 </body>
