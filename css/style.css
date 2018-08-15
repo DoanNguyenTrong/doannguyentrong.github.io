@@ -11,10 +11,6 @@ html, body {
 .navbar {
     padding: .8rem;
     border-bottom: 1px solid #b4b4b4;
-    /* position: fixed; 
-    top: 0;
-    width: 100%; */
-
 }
 .navbar-nav li {
     padding-right: 20px;
@@ -26,7 +22,11 @@ html, body {
 .navbar-brand img {
     max-width: 50px;
 }
-
+h1.downward {
+    position: relative;
+    /* padding-top: 50px; */
+    margin-top: 2rem;
+}
 /* This shit have to be modified when it comes to small screen size */
 .carousel-inner img {
     width: 100%;
@@ -34,7 +34,7 @@ html, body {
 }
 
 .carousel-caption {
-    /* position: absolute; */
+    position: absolute;
     color: #e54d26;
     top: 50%;
     transform: translateY(-50%);
@@ -72,7 +72,7 @@ html, body {
 .welcome {
     width: 75%;
     margin: 0 auto;
-    /* padding-top: 2rem; */
+    padding-top: 2rem;
 }
 .welcome hr{
     border-top: 2px solid #b4b4b4;
@@ -129,46 +129,14 @@ html, body {
 .fa-youtube:hover {
     color: #d5d5d5;
 }
-/* left and righ of a post */
-.post-text{
-    padding-left: 20%;
-    padding-right: 20%;
-}
+
 footer {
     background-color: #3f3f3f;
     color: #d5d5d5;
     /* padding-top: 2rem; */
 }
-/* Page title */
-.break-navbar{
-    margin-top: 70px;
-}
-#back-to-top {
-    position: fixed;
-    bottom: 3em;
-    right: 3em;
-    background-color: rgb(255, 255, 255, .9);
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    padding: 1em;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-weight: 700;
-    box-shadow: 0 0 2em 0 rgba(0, 0, 0, .25);
-    transition: all .3s ease-in-out;
-    display: inline-block;
-    opacity: 0;
-    text-decoration: none;
-    font-size: 0.75em;
-}
-#back-to-top:hover{
-    background-color: #fff;
-    padding: 1em 3em;
-}
-#back-to-top.visible {
-    opacity: 1;
-}
+
+
 
 
 /* Media queries */
@@ -193,11 +161,6 @@ footer {
     }
     .display-4 {
         font-size: 300%;
-    }
-    /* left and righ of a post */
-    .post-text{
-        padding-left: 10%;
-        padding-right: 10%;
     }
 
 }
@@ -233,11 +196,6 @@ footer {
         margin: auto;
         text-align: center;
     }
-    /* left and righ of a post */
-    .post-text{
-        padding-left: 5%;
-        padding-right: 5%;
-    }
 }
 @media (max-width: 624px){
     .carousel-caption {
@@ -262,11 +220,6 @@ footer {
     .social a {
         font-size: 2em;
         padding: 1rem;
-    }
-    /* left and righ of a post */
-    .post-text{
-        padding-left: 0;
-        padding-right: 0;
     }
 
 }
