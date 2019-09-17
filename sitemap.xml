@@ -113,22 +113,22 @@
   </url>
   
   <url>
-    <loc>/mayhoc/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/youtube/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/</loc>
     <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
   <url>
     <loc>/index/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/mayhoc/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/youtube/</loc>
     <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
