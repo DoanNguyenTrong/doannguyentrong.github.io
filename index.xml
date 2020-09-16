@@ -6,74 +6,304 @@
     <description>Recent content on Doan Nguyen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate>
+    <managingEditor>nguyentrongdoan.0@gmail.com (Doan Nguyen)</managingEditor>
+    <webMaster>nguyentrongdoan.0@gmail.com (Doan Nguyen)</webMaster>
+    <lastBuildDate>Tue, 17 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://doannguyentrong.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://doannguyentrong.github.io/blog/amazon-increase-income.1/</link>
+      <title>Giới thiệu về Machine Learning</title>
+      <link>https://doannguyentrong.github.io/mayhoc/introduction/</link>
+      <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/mayhoc/introduction/</guid>
+      <description>Giới thiệu chung Định nghĩa: Machine Learning(ML) là một nhánh của ngành khoa học máy tính (Computer Science) tập trung sử dụng các phương pháp thống kê (Statistical techniques) để trao cho các hệ thống tính toán (máy tính) khả năng &amp;ldquo;học hỏi&amp;rdquo; từ tập dữ liệu (data) mà không cần phải được lập trình một cách chuyên biệt.
+Theo định nghĩa trên bạn nên chú ý rằng khả năng &amp;ldquo;học hỏi&amp;rdquo; của các thuật toán ML dựa trên một loạt các phép toán thống kê xác suất và các quyết định/dự đoán do thuật toán đưa ra hoàn toàn phụ thuộc vào dữ liệu (data) đã thu thập được.</description>
+    </item>
+    
+    <item>
+      <title>Clustering- Những kiến thức mở đầu</title>
+      <link>https://doannguyentrong.github.io/mayhoc/clustering-introduction/</link>
+      <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/mayhoc/clustering-introduction/</guid>
+      <description>Giới thiệu | Clustering là phương pháp nhóm một tập các đối tượng(object) theo một cách mà các đối tượng được đặt trong cùng một nhóm (cluster) sẽ mang trong mình những đặc điểm tương tự nhau hơn những đối tượng nằm trong nhóm khác. Đây là một nhiệm vụ cốt lõi của data mining hay dịch ra là đào mỏ dữ liệu, một phương pháp được dùng phổ biến trong phân tích dữ liệu thống kê (statistical data analysis), được dùng trong rất nhiều lĩnh vực như: machine learning, pattern recognition (nhận dạng nguyên mẫu), image analysis (thống kê hình ảnh), information retrieval (khôi phục thông tin), bioinformatics (phân tích dữ liệu di truyền - gene), data compression (nén dữ liệu), và computer graphics (đồ họa máy tính).</description>
+    </item>
+    
+    <item>
+      <title>k-Means Clustering</title>
+      <link>https://doannguyentrong.github.io/mayhoc/k-means-clustering/</link>
+      <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/mayhoc/k-means-clustering/</guid>
+      <description>Vài dòng giới thiệu về thuật toán | k-Means Clustering là một trong những thuật toán đơn giản và nổi tiếng nhất của làng Machine Learning. Nó là phương pháp tuy đơn giản nhưng đặc biệt hiệu quả trong bài toán Unsupervised Learning, khi mà dữ liệu của bạn chưa được phân loại (unlabeled). Mục tiêu của thuật toán này là chia nhỏ data của bạn thành k groups dựa trên features được cung cấp.</description>
+    </item>
+    
+    <item>
+      <title>k-Nearest Neighbors</title>
+      <link>https://doannguyentrong.github.io/mayhoc/k-nearest-neighbors/</link>
+      <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/mayhoc/k-nearest-neighbors/</guid>
+      <description>https://www.analyticsvidhya.com/blog/2018/03/introduction-k-neighbours-algorithm-clustering/</description>
+    </item>
+    
+    <item>
+      <title>Mixture of Gaussian</title>
+      <link>https://doannguyentrong.github.io/mayhoc/mixture-of-gaussian/</link>
+      <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/mayhoc/mixture-of-gaussian/</guid>
+      <description>=========</description>
+    </item>
+    
+    <item>
+      <title>Power iteration Clustering</title>
+      <link>https://doannguyentrong.github.io/mayhoc/power-iteration-clustering/</link>
+      <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/mayhoc/power-iteration-clustering/</guid>
+      <description>==========================</description>
+    </item>
+    
+    <item>
+      <title>Học từ MIT, Standford, Havard... MIỄN PHÍ, Tại sao không?</title>
+      <link>https://doannguyentrong.github.io/youtube/hoc-tu-mit-stanford-mien-phi-tai-sao-khong/</link>
+      <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/youtube/hoc-tu-mit-stanford-mien-phi-tai-sao-khong/</guid>
+      <description>Thực ra thì mình đã viết nội dung cho video này từ cả năm trước rồi. Nhưng chần chừ mãi không quay, vì mình thấy rằng đa phần số đông thích cái gì đó đơn giản, hài hài vui vui, dễ chơi dễ chúng thưởng. Đó là lí do 3&amp;frasl;4 băng thông Youtube dành cho video ca nhạc, đến mức Google phải tách mảng Youtube Music ra thành một app riêng.</description>
+    </item>
+    
+    <item>
+      <title>1. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income/</link>
       <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://doannguyentrong.github.io/blog/amazon-increase-income.1/</guid>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    
+    <item>
+      <title>10. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income-10-copy/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income-10-copy/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    
+    <item>
+      <title>10. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income-10/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income-10/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    
+    <item>
+      <title>11. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income-11-copy/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income-11-copy/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    
+    <item>
+      <title>11. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income-11/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income-11/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    
+    <item>
+      <title>12. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income-12-copy/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income-12-copy/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    
+    <item>
+      <title>12. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income-12/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income-12/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    
+    <item>
+      <title>2. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income.1-copy/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income.1-copy/</guid>
       <description>post 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
     <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://doannguyentrong.github.io/blog/amazon-increase-income.2/</link>
+      <title>2. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income.1/</link>
       <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://doannguyentrong.github.io/blog/amazon-increase-income.2/</guid>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income.1/</guid>
+      <description>post 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+    <item>
+      <title>3. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income.2-copy/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income.2-copy/</guid>
       <description>Post 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
     <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://doannguyentrong.github.io/blog/amazon-increase-income.3/</link>
+      <title>3. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income.2/</link>
       <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://doannguyentrong.github.io/blog/amazon-increase-income.3/</guid>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income.2/</guid>
+      <description>Post 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+    <item>
+      <title>4. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income.3-copy/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income.3-copy/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
     
     <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://doannguyentrong.github.io/blog/amazon-increase-income.4/</link>
+      <title>4. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income.3/</link>
       <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://doannguyentrong.github.io/blog/amazon-increase-income.4/</guid>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income.3/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
     
     <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://doannguyentrong.github.io/blog/amazon-increase-income.5/</link>
+      <title>5. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income.4-copy/</link>
       <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://doannguyentrong.github.io/blog/amazon-increase-income.5/</guid>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income.4-copy/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
     
     <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://doannguyentrong.github.io/blog/amazon-increase-income/</link>
+      <title>5. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income.4/</link>
       <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://doannguyentrong.github.io/blog/amazon-increase-income/</guid>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income.4/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    
+    <item>
+      <title>6. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income.5-copy/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income.5-copy/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    
+    <item>
+      <title>6. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income.5/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income.5/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    
+    <item>
+      <title>7. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income-7-copy/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income-7-copy/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    
+    <item>
+      <title>7. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income-7/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income-7/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
+    </item>
+    
+    <item>
+      <title>8. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income-8-copy/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income-8-copy/</guid>
+      <description>post 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+    <item>
+      <title>8. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income-8/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income-8/</guid>
+      <description>post 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+    <item>
+      <title>9. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income-9-copy/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income-9-copy/</guid>
+      <description>Post 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+    <item>
+      <title>9. Amazon increase income 1.5 Million</title>
+      <link>https://doannguyentrong.github.io/posts/amazon-increase-income-9/</link>
+      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/amazon-increase-income-9/</guid>
+      <description>Post 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
     <item>
       <title>Amazon increase income 1.5 Million</title>
       <link>https://doannguyentrong.github.io/index/amazon-increase-income.4/</link>
       <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
       <guid>https://doannguyentrong.github.io/index/amazon-increase-income.4/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
@@ -83,7 +313,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
       <title>Amazon increase income 1.5 Million</title>
       <link>https://doannguyentrong.github.io/index/amazon-increase-income.5/</link>
       <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
       <guid>https://doannguyentrong.github.io/index/amazon-increase-income.5/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
@@ -93,124 +323,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
       <title>Amazon increase income 1.5 Million</title>
       <link>https://doannguyentrong.github.io/index/amazon-increase-income/</link>
       <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
       <guid>https://doannguyentrong.github.io/index/amazon-increase-income/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://doannguyentrong.github.io/mayhoc/amazon-increase-income.1/</link>
-      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://doannguyentrong.github.io/mayhoc/amazon-increase-income.1/</guid>
-      <description>post 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
-    </item>
-    
-    <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://doannguyentrong.github.io/mayhoc/amazon-increase-income.2/</link>
-      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://doannguyentrong.github.io/mayhoc/amazon-increase-income.2/</guid>
-      <description>Post 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
-    </item>
-    
-    <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://doannguyentrong.github.io/mayhoc/amazon-increase-income.3/</link>
-      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://doannguyentrong.github.io/mayhoc/amazon-increase-income.3/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://doannguyentrong.github.io/mayhoc/amazon-increase-income.4/</link>
-      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://doannguyentrong.github.io/mayhoc/amazon-increase-income.4/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://doannguyentrong.github.io/mayhoc/amazon-increase-income.5/</link>
-      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://doannguyentrong.github.io/mayhoc/amazon-increase-income.5/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://doannguyentrong.github.io/mayhoc/amazon-increase-income/</link>
-      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://doannguyentrong.github.io/mayhoc/amazon-increase-income/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://doannguyentrong.github.io/youtube/amazon-increase-income.1/</link>
-      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://doannguyentrong.github.io/youtube/amazon-increase-income.1/</guid>
-      <description>post 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
-    </item>
-    
-    <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://doannguyentrong.github.io/youtube/amazon-increase-income.2/</link>
-      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://doannguyentrong.github.io/youtube/amazon-increase-income.2/</guid>
-      <description>Post 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
-    </item>
-    
-    <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://doannguyentrong.github.io/youtube/amazon-increase-income.3/</link>
-      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://doannguyentrong.github.io/youtube/amazon-increase-income.3/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://doannguyentrong.github.io/youtube/amazon-increase-income.4/</link>
-      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://doannguyentrong.github.io/youtube/amazon-increase-income.4/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://doannguyentrong.github.io/youtube/amazon-increase-income.5/</link>
-      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://doannguyentrong.github.io/youtube/amazon-increase-income.5/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
-    </item>
-    
-    <item>
-      <title>Amazon increase income 1.5 Million</title>
-      <link>https://doannguyentrong.github.io/youtube/amazon-increase-income/</link>
-      <pubDate>Sun, 12 May 2019 12:14:34 +0600</pubDate>
-      
-      <guid>https://doannguyentrong.github.io/youtube/amazon-increase-income/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>

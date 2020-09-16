@@ -3,32 +3,157 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://doannguyentrong.github.io/blog/amazon-increase-income.1/</loc>
+    <loc>https://doannguyentrong.github.io/mayhoc/introduction/</loc>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/mayhoc/clustering-introduction/</loc>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/</loc>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/mayhoc/k-means-clustering/</loc>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/mayhoc/k-nearest-neighbors/</loc>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/mayhoc/mixture-of-gaussian/</loc>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/mayhoc/power-iteration-clustering/</loc>
+    <lastmod>2019-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/youtube/hoc-tu-mit-stanford-mien-phi-tai-sao-khong/</loc>
+    <lastmod>2019-09-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income/</loc>
     <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://doannguyentrong.github.io/blog/amazon-increase-income.2/</loc>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income-10-copy/</loc>
     <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://doannguyentrong.github.io/blog/amazon-increase-income.3/</loc>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income-10/</loc>
     <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://doannguyentrong.github.io/blog/amazon-increase-income.4/</loc>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income-11-copy/</loc>
     <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://doannguyentrong.github.io/blog/amazon-increase-income.5/</loc>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income-11/</loc>
     <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://doannguyentrong.github.io/blog/amazon-increase-income/</loc>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income-12-copy/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income-12/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income.1-copy/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income.1/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income.2-copy/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income.2/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income.3-copy/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income.3/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income.4-copy/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income.4/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income.5-copy/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income.5/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income-7-copy/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income-7/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income-8-copy/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income-8/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income-9-copy/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/posts/amazon-increase-income-9/</loc>
     <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
@@ -48,67 +173,7 @@
   </url>
   
   <url>
-    <loc>https://doannguyentrong.github.io/mayhoc/amazon-increase-income.1/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://doannguyentrong.github.io/mayhoc/amazon-increase-income.2/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://doannguyentrong.github.io/mayhoc/amazon-increase-income.3/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://doannguyentrong.github.io/mayhoc/amazon-increase-income.4/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://doannguyentrong.github.io/mayhoc/amazon-increase-income.5/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://doannguyentrong.github.io/mayhoc/amazon-increase-income/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://doannguyentrong.github.io/youtube/amazon-increase-income.1/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://doannguyentrong.github.io/youtube/amazon-increase-income.2/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://doannguyentrong.github.io/youtube/amazon-increase-income.3/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://doannguyentrong.github.io/youtube/amazon-increase-income.4/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://doannguyentrong.github.io/youtube/amazon-increase-income.5/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://doannguyentrong.github.io/youtube/amazon-increase-income/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://doannguyentrong.github.io/blog/</loc>
+    <loc>https://doannguyentrong.github.io/index/</loc>
     <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
   
@@ -118,22 +183,13 @@
   </url>
   
   <url>
+    <loc>https://doannguyentrong.github.io/posts/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://doannguyentrong.github.io/youtube/</loc>
     <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://doannguyentrong.github.io/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://doannguyentrong.github.io/index/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://doannguyentrong.github.io/about/</loc>
   </url>
   
   <url>
@@ -142,6 +198,10 @@
   
   <url>
     <loc>https://doannguyentrong.github.io/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://doannguyentrong.github.io/about/</loc>
   </url>
   
 </urlset>

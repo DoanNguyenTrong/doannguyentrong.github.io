@@ -52,7 +52,7 @@ html, body {
 }
 
 .btn-primary {
-    background-color: #6648b1;
+    background-color: #7157bb;
     border: 1px solid #563d7c;
 
 }
@@ -326,7 +326,7 @@ figure {
 }
 
 #fixed {
-    background-image: url(img/background.png);
+    /* background-image: url(img/background.png); */
     position: fixed;
     display: block;
     top: 0;
