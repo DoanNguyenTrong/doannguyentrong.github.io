@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal blog of Doan Nguyen">
+  <meta name="author" content="Doan Nguyen" />
+  <meta property="title" content="Doan Nguyen" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://doannguyentrong.github.io/plugins/style.css ">
+  
+
+  <!--Favicon-->
+  
+  
+  <link rel="icon" href="https://doannguyentrong.github.io/images/favicon.png " type="image/x-icon">
+  <title>A single framework for inference from different pre-trained models (Caffe, MXnet, Darknet, Tensorflow, ...) </title>
+</head><body><header> 
+  
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+          
+          <div class="navbar-header">
+              <a class="navbar-brand" href="https://doannguyentrong.github.io/"><img src="https://doannguyentrong.github.io/images/author.png" alt="Doan Nguyen"></a>
+          </div>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              
+              <ul class="navbar-nav ml-auto">
+                
+                
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="https://doannguyentrong.github.io/">Home</a>
+                </li>
+                
+                
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="https://doannguyentrong.github.io/about">About</a>
+                </li>
+                
+                
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="https://doannguyentrong.github.io/posts">Posts</a>
+                </li>
+                
+                
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="https://doannguyentrong.github.io/youtube">Youtube</a>
+                </li>
+                
+                
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="https://doannguyentrong.github.io/mayhoc">Máy học</a>
+                </li>
+                
+                
+              </ul>
+          </div>
+
+      </div>
+  </nav>
+</header>
+
+
+<div class="container-fluid padding" style="padding-top: 7em;">
+  <div class="row welcome">
+      <div class="col-12">
+          
+          <h3 class="font-tertiary mb-5 text-center">A single framework for inference from different pre-trained models (Caffe, MXnet, Darknet, Tensorflow, ...)</h3>
+          <div class=" align-center">
+            <img src="https://doannguyentrong.github.io/images/author.png" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+          <p class="font-secondary">Published on Dec 16, 2020 by <span class="text-primary">Doan Nguyen</span></p>
+          </div>
+          <div class="content text-justify post-text">
+            <img class="img-fluid" style="max-width: 100%; height: auto;"  >
+            
+
+<!-- 
+<div  class="col-sm-12 col-lg-12 col-md-12">
+    
+        <img class="img-fluid" src="/images/posts/opencv-dnn-inference.webp"  />
+    
+    
+</div>
+ -->
+
+<h3 id="object-detection-and-localization-from-overhead-cameras-in-fixed-area">Object Detection and Localization from overhead cameras in fixed area</h3>
+
+<p>This micropackage includes:</p>
+
+<ul>
+<li><code>object_detector.py</code>: A wraper of opencv <code>dnn</code> module for different sources of pre-trained models: caffe, tensorflow or darknet &hellip; You can use the same framework, which contains only 2 methods: <code>forward()</code> and <code>post_process()</code>, for all models from different architectures.</li>
+<li><code>localizer.py</code>: A simple localization algorithm for overhead camera in fixed area</li>
+</ul>
+
+<p>You can:</p>
+
+<ul>
+<li>load the interested model in and use it directly to infer from an input. Interestingly, you can enable <code>CUDA</code> GPU just by setting a flag. Pretty neat, right?</li>
+<li>Use the localizer to identify true location of object in the selected area.</li>
+</ul>
+
+<p>Repo url: <a href="https://github.com/DoanNguyenTrong/opencv-object-detector">https://github.com/DoanNguyenTrong/opencv-object-detector</a></p>
+
+<p><em>This is a part of an IoT network that I am developing at ICONS Lab. It&rsquo;s a distributed system of multiple cameras and CO2 sensors for occupancy density detection and air/ventilation quality assessment. Our goal is to develop methods and metrics to better assess and maintain healthy indoor environments during a pandemic.</em></p>
+
+<h3 id="methods">Methods</h3>
+
+<p>Object detection:</p>
+
+<ul>
+<li>Creat object: <code>HD = ObjectDetector(weight_file, config_file, classes_name_file, GPU=True/False)</code></li>
+<li>Inference: <code>out = HD.forward(img)</code> to obtain ouput of the network after feeding your <code>img</code> through</li>
+<li>Post process: <code>clss_IDs, scores, bbox = HD.post_process(outs, width, height)</code> to get class IDs of the objects, its confident scores as well as bounding boxes</li>
+<li>Draw:
+
+<ul>
+<li><code>HD.draw_all(img, IDs, scores, bbox)</code> to draw all objects in the frame</li>
+<li><code>HD.draw_(img, IDs, scores, bbox, human=0)</code> to draw human in the frame. You need to specify the id of human that is used by the network (e.g., <code>0</code> in the case of YOLO)</li>
+</ul></li>
+</ul>
+
+<p>Object localization:</p>
+
+<ul>
+<li><p>Create object: <code>LZ = Localizer([x0, y0], [xt, yt])</code>. Here, [x0 , y0] are x and y lists of 4 original points and [xt, yt] are x and y of 4 corresponding points that will be used for the perspective transformation algorithm <code>cv2.getPerspectiveTransform()</code>. This step allows us to get a transformation matrix that can convert from camera&rsquo;s  to top-down view point. Then we can approximate the true location of people in the area.</p>
+
+<pre><code class="language-py"># Example
+# Original
+xo = [334, 165, 931, 1117]
+yo = [180, 591, 171, 571]
+# Transformed
+xt = [0, 0, 600, 600]
+yt = [0, 600, 0, 600]
+</code></pre></li>
+
+<li><p>Extract raw locations: <code>raw_locs = LZ.raw_location(bbox, offset=[0,0])</code>. Here we assume that the location of one object is at the middle of bottom edge of a bounding box. You can tune it by specify <code>offset</code> for both x and y axes.</p></li>
+
+<li><p>True locations: <code>true_locs = LZ.actual_location(IDs, scores, raw_locs, clss= None)</code>. You need to provide list of IDs and scores so that the method can extract these information corresponding to each location. If you want to filters only interested classed, change <code>clss</code> to a list of IDs (e.g., <code>clss=[0, 14]</code>).</p></li>
+
+<li><p>Draw: <code>LZ.draw_locs(img, true_locs, radius, thickness, color)</code> to draw a circle at <code>true_locs</code></p></li>
+</ul>
+
+<h3 id="some-commands-to-use-example-py">Some commands to use <code>example.py</code></h3>
+
+<pre><code class="language-bash">python3 example.py
+
+python3 example.py --type caffe --loc /model_zoo/caffe/ --m MobileNetSSD_deploy --video videos/demo2.mp4
+
+python3 example.py --type tf --loc /model_zoo/tensorflow/ --m mask_rcnn_inception_v2_coco_2018_01_28 --video videos/demo2.mp4
+</code></pre>
+
+        </div>
+      </div>
+  </div>     
+</div>
+
+
+    </body><footer>
+  <div class="container-fluid">
+      <div class="row text-center">
+          <div class="col-12">
+              <h5>&copy;Doan Nguyen, 2020</h5>
+              <p>nguyentrongdoan.0@gmail.com</p>
+          </div>
+      </div>
+  </div>
+</footer></html>
