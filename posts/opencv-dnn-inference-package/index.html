@@ -167,6 +167,101 @@ python3 example.py --type caffe --loc /model_zoo/caffe/ --m MobileNetSSD_deploy 
 python3 example.py --type tf --loc /model_zoo/tensorflow/ --m mask_rcnn_inception_v2_coco_2018_01_28 --video videos/demo2.mp4
 </code></pre>
 
+<h3 id="benchmark">Benchmark</h3>
+
+<p>I have tested the inference on some scenarios and here is a quick summary. When you enable <code>GPU</code> inference, the speed is increased roughly <code>8X</code>. Also, I have some tests using TensorRT, and it significant improvement is very interesting.
+You can see that I did test <code>gluoncv</code> - a handy package that comes with some pre-trained models, but it performance is very poor.</p>
+
+<table>
+<thead>
+<tr>
+<th>Algorithm</th>
+<th>System</th>
+<th>Performance</th>
+<th>Accuracy</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Tiny Yolov3(opencv)</td>
+<td>MacOS (core i7)</td>
+<td>~30 FPS (cpu)</td>
+<td>Bad: miss/false detection on both videos</td>
+</tr>
+
+<tr>
+<td>Yolov4 (openCV)</td>
+<td>MacOS (core i7)</td>
+<td>~ 2FPS (cpu)</td>
+<td>Good: can detect almost all people in the testing videos.Very little miss/false detection and works well with full HD videos.</td>
+</tr>
+
+<tr>
+<td>Yolov3(gluoncv)</td>
+<td>MacOS (core i7)</td>
+<td>0.4 - 0.5 FPS (cpu)</td>
+<td>Bad:  miss/false detection on the overhead view video. Good accuracy on the human point of view video</td>
+</tr>
+
+<tr>
+<td>SSD(gluoncv)</td>
+<td>MacOS (core i7)</td>
+<td>0.8-0.9 FPS (cpu)</td>
+<td>Bad:  miss/false detection on the overhead view video. Not so good on the human point of view video</td>
+</tr>
+
+<tr>
+<td>Faster RCNN(gluoncv)</td>
+<td>MacOS (core i7)</td>
+<td>~0.1 FPS (cpu)</td>
+<td>Bad:  miss/false detection on the overhead view video, Good on the human point of view video</td>
+</tr>
+
+<tr>
+<td>Center net (gluoncv)</td>
+<td>MacOS (core i7)</td>
+<td>0.3 - 0.4 FPS (cpu)</td>
+<td>Bad:  miss/false detection on the overhead view video, Good on the human point of view video</td>
+</tr>
+
+<tr>
+<td>mask_rcnn_inception_v2 (openCV)</td>
+<td>MacOS (core i7)</td>
+<td>~ 1.2 FPS - video 1, 0.7-0.8 FPS (cpu) - video 2</td>
+<td>Quite good:  Some miss/false detection on the overhead view video, good on the human point of view video</td>
+</tr>
+
+<tr>
+<td>ssd_mobilenet_v1 (openCV)</td>
+<td>MacOS (core i7)</td>
+<td>~3 FPS - video 1, 1.2 FPS (cpu) - video 2</td>
+<td>Bad:  miss/false detection on both videos</td>
+</tr>
+
+<tr>
+<td>MobileNetSSD_deploy (openCV)</td>
+<td>MacOS (core i7)</td>
+<td>~ 20 FPS (cpu)</td>
+<td>Very bad</td>
+</tr>
+
+<tr>
+<td>Yolov4 (openCV)</td>
+<td>Jetson TX2</td>
+<td>~ 0.25 FPS (cpu), ~ 2 FPS(GPU)</td>
+<td>Same accuracy as running on my Macbook</td>
+</tr>
+
+<tr>
+<td>Yolov4 (TensorRT)</td>
+<td>Jetson TX2</td>
+<td>6-8 FPS (GPU)</td>
+<td>Same accuracy as running on my Macbook</td>
+</tr>
+</tbody>
+</table>
+
         </div>
       </div>
   </div>     
