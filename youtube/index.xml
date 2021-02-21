@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Youtube on Doan Nguyen</title>
@@ -8,18 +8,14 @@
     <language>en-us</language>
     <managingEditor>nguyentrongdoan.0@gmail.com (Doan Nguyen)</managingEditor>
     <webMaster>nguyentrongdoan.0@gmail.com (Doan Nguyen)</webMaster>
-    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate>
-    
-	<atom:link href="https://doannguyentrong.github.io/youtube/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate><atom:link href="https://doannguyentrong.github.io/youtube/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Học từ MIT, Standford, Havard... MIỄN PHÍ, Tại sao không?</title>
       <link>https://doannguyentrong.github.io/youtube/hoc-tu-mit-stanford-mien-phi-tai-sao-khong/</link>
       <pubDate>Sat, 14 Sep 2019 00:00:00 +0000</pubDate>
       <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
       <guid>https://doannguyentrong.github.io/youtube/hoc-tu-mit-stanford-mien-phi-tai-sao-khong/</guid>
-      <description>Thực ra thì mình đã viết nội dung cho video này từ cả năm trước rồi. Nhưng chần chừ mãi không quay, vì mình thấy rằng đa phần số đông thích cái gì đó đơn giản, hài hài vui vui, dễ chơi dễ chúng thưởng. Đó là lí do 3&amp;frasl;4 băng thông Youtube dành cho video ca nhạc, đến mức Google phải tách mảng Youtube Music ra thành một app riêng.</description>
+      <description>Thực ra thì mình đã viết nội dung cho video này từ cả năm trước rồi. Nhưng chần chừ mãi không quay, vì mình thấy rằng đa phần số đông thích cái gì đó đơn giản, hài hài vui vui, dễ chơi dễ chúng thưởng. Đó là lí do 3/4 băng thông Youtube dành cho video ca nhạc, đến mức Google phải tách mảng Youtube Music ra thành một app riêng.</description>
     </item>
     
   </channel>

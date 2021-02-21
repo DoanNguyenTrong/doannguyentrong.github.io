@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Doan Nguyen</title>
@@ -8,11 +8,7 @@
     <language>en-us</language>
     <managingEditor>nguyentrongdoan.0@gmail.com (Doan Nguyen)</managingEditor>
     <webMaster>nguyentrongdoan.0@gmail.com (Doan Nguyen)</webMaster>
-    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate>
-    
-	<atom:link href="https://doannguyentrong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate><atom:link href="https://doannguyentrong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Make a conversation between two ESP32 using MQTT protocol</title>
       <link>https://doannguyentrong.github.io/posts/test-two-esp32-making-conversation/</link>
@@ -28,7 +24,7 @@
       <pubDate>Wed, 16 Dec 2020 00:00:00 +0000</pubDate>
       <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
       <guid>https://doannguyentrong.github.io/posts/opencv-dnn-inference-package/</guid>
-      <description>-- Object Detection and Localization from overhead cameras in fixed area This micropackage includes:
+      <description>Object Detection and Localization from overhead cameras in fixed area This micropackage includes:
  object_detector.py: A wraper of opencv dnn module for different sources of pre-trained models: caffe, tensorflow or darknet &amp;hellip; You can use the same framework, which contains only 2 methods: forward() and post_process(), for all models from different architectures. localizer.py: A simple localization algorithm for overhead camera in fixed area  You can:
  load the interested model in and use it directly to infer from an input.</description>
     </item>

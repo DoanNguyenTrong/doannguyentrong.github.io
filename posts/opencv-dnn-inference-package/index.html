@@ -78,88 +78,57 @@
           </div>
           <div class="content text-justify post-text">
             <img class="img-fluid" style="max-width: 100%; height: auto;"  >
-            
-
-<!-- 
-<div  class="col-sm-12 col-lg-12 col-md-12">
-    
-        <img class="img-fluid" src="/images/posts/opencv-dnn-inference.webp"  />
-    
-    
-</div>
- -->
-
+            <!-- raw HTML omitted -->
 <h3 id="object-detection-and-localization-from-overhead-cameras-in-fixed-area">Object Detection and Localization from overhead cameras in fixed area</h3>
-
 <p>This micropackage includes:</p>
-
 <ul>
 <li><code>object_detector.py</code>: A wraper of opencv <code>dnn</code> module for different sources of pre-trained models: caffe, tensorflow or darknet &hellip; You can use the same framework, which contains only 2 methods: <code>forward()</code> and <code>post_process()</code>, for all models from different architectures.</li>
 <li><code>localizer.py</code>: A simple localization algorithm for overhead camera in fixed area</li>
 </ul>
-
 <p>You can:</p>
-
 <ul>
 <li>load the interested model in and use it directly to infer from an input. Interestingly, you can enable <code>CUDA</code> GPU just by setting a flag. Pretty neat, right?</li>
 <li>Use the localizer to identify true location of object in the selected area.</li>
 </ul>
-
 <p>Repo url: <a href="https://github.com/DoanNguyenTrong/opencv-object-detector">https://github.com/DoanNguyenTrong/opencv-object-detector</a></p>
-
 <p><em>This is a part of an IoT network that I am developing at ICONS Lab. It&rsquo;s a distributed system of multiple cameras and CO2 sensors for occupancy density detection and air/ventilation quality assessment. Our goal is to develop methods and metrics to better assess and maintain healthy indoor environments during a pandemic.</em></p>
-
 <h3 id="methods">Methods</h3>
-
 <p>Object detection:</p>
-
 <ul>
 <li>Creat object: <code>HD = ObjectDetector(weight_file, config_file, classes_name_file, GPU=True/False)</code></li>
 <li>Inference: <code>out = HD.forward(img)</code> to obtain ouput of the network after feeding your <code>img</code> through</li>
 <li>Post process: <code>clss_IDs, scores, bbox = HD.post_process(outs, width, height)</code> to get class IDs of the objects, its confident scores as well as bounding boxes</li>
 <li>Draw:
-
 <ul>
 <li><code>HD.draw_all(img, IDs, scores, bbox)</code> to draw all objects in the frame</li>
 <li><code>HD.draw_(img, IDs, scores, bbox, human=0)</code> to draw human in the frame. You need to specify the id of human that is used by the network (e.g., <code>0</code> in the case of YOLO)</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <p>Object localization:</p>
-
 <ul>
-<li><p>Create object: <code>LZ = Localizer([x0, y0], [xt, yt])</code>. Here, [x0 , y0] are x and y lists of 4 original points and [xt, yt] are x and y of 4 corresponding points that will be used for the perspective transformation algorithm <code>cv2.getPerspectiveTransform()</code>. This step allows us to get a transformation matrix that can convert from camera&rsquo;s  to top-down view point. Then we can approximate the true location of people in the area.</p>
-
-<pre><code class="language-py"># Example
-# Original
-xo = [334, 165, 931, 1117]
-yo = [180, 591, 171, 571]
-# Transformed
-xt = [0, 0, 600, 600]
-yt = [0, 600, 0, 600]
-</code></pre></li>
-
-<li><p>Extract raw locations: <code>raw_locs = LZ.raw_location(bbox, offset=[0,0])</code>. Here we assume that the location of one object is at the middle of bottom edge of a bounding box. You can tune it by specify <code>offset</code> for both x and y axes.</p></li>
-
-<li><p>True locations: <code>true_locs = LZ.actual_location(IDs, scores, raw_locs, clss= None)</code>. You need to provide list of IDs and scores so that the method can extract these information corresponding to each location. If you want to filters only interested classed, change <code>clss</code> to a list of IDs (e.g., <code>clss=[0, 14]</code>).</p></li>
-
-<li><p>Draw: <code>LZ.draw_locs(img, true_locs, radius, thickness, color)</code> to draw a circle at <code>true_locs</code></p></li>
+<li>Create object: <code>LZ = Localizer([x0, y0], [xt, yt])</code>. Here, [x0 , y0] are x and y lists of 4 original points and [xt, yt] are x and y of 4 corresponding points that will be used for the perspective transformation algorithm <code>cv2.getPerspectiveTransform()</code>. This step allows us to get a transformation matrix that can convert from camera&rsquo;s  to top-down view point. Then we can approximate the true location of people in the area.\
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">  <span style="color:#75715e"># Example</span>
+  <span style="color:#75715e"># Original</span>
+  xo <span style="color:#f92672">=</span> [<span style="color:#ae81ff">334</span>, <span style="color:#ae81ff">165</span>, <span style="color:#ae81ff">931</span>, <span style="color:#ae81ff">1117</span>]
+  yo <span style="color:#f92672">=</span> [<span style="color:#ae81ff">180</span>, <span style="color:#ae81ff">591</span>, <span style="color:#ae81ff">171</span>, <span style="color:#ae81ff">571</span>]
+  <span style="color:#75715e"># Transformed</span>
+  xt <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">600</span>, <span style="color:#ae81ff">600</span>]
+  yt <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">600</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">600</span>]
+</code></pre></div></li>
+<li>Extract raw locations: <code>raw_locs = LZ.raw_location(bbox, offset=[0,0])</code>. Here we assume that the location of one object is at the middle of bottom edge of a bounding box. You can tune it by specify <code>offset</code> for both x and y axes.</li>
+<li>True locations: <code>true_locs = LZ.actual_location(IDs, scores, raw_locs, clss= None)</code>. You need to provide list of IDs and scores so that the method can extract these information corresponding to each location. If you want to filters only interested classed, change <code>clss</code> to a list of IDs (e.g., <code>clss=[0, 14]</code>).</li>
+<li>Draw: <code>LZ.draw_locs(img, true_locs, radius, thickness, color)</code> to draw a circle at <code>true_locs</code></li>
 </ul>
-
-<h3 id="some-commands-to-use-example-py">Some commands to use <code>example.py</code></h3>
-
-<pre><code class="language-bash">python3 example.py
+<h3 id="some-commands-to-use-examplepy">Some commands to use <code>example.py</code></h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python3 example.py
 
 python3 example.py --type caffe --loc /model_zoo/caffe/ --m MobileNetSSD_deploy --video videos/demo2.mp4
 
 python3 example.py --type tf --loc /model_zoo/tensorflow/ --m mask_rcnn_inception_v2_coco_2018_01_28 --video videos/demo2.mp4
-</code></pre>
-
-<h3 id="benchmark">Benchmark</h3>
-
+</code></pre></div><h3 id="benchmark">Benchmark</h3>
 <p>I have tested the inference on some scenarios and here is a quick summary. When you enable <code>GPU</code> inference, the speed is increased roughly <code>8X</code>. Also, I have some tests using TensorRT, and it significant improvement is very interesting.
 You can see that I did test <code>gluoncv</code> - a handy package that comes with some pre-trained models, but it performance is very poor.</p>
-
 <table>
 <thead>
 <tr>
@@ -169,7 +138,6 @@ You can see that I did test <code>gluoncv</code> - a handy package that comes wi
 <th>Accuracy</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Tiny Yolov3(opencv)</td>
@@ -177,70 +145,60 @@ You can see that I did test <code>gluoncv</code> - a handy package that comes wi
 <td>~30 FPS (cpu)</td>
 <td>Bad: miss/false detection on both videos</td>
 </tr>
-
 <tr>
 <td>Yolov4 (openCV)</td>
 <td>MacOS (core i7)</td>
 <td>~ 2FPS (cpu)</td>
 <td>Good: can detect almost all people in the testing videos.Very little miss/false detection and works well with full HD videos.</td>
 </tr>
-
 <tr>
 <td>Yolov3(gluoncv)</td>
 <td>MacOS (core i7)</td>
 <td>0.4 - 0.5 FPS (cpu)</td>
 <td>Bad:  miss/false detection on the overhead view video. Good accuracy on the human point of view video</td>
 </tr>
-
 <tr>
 <td>SSD(gluoncv)</td>
 <td>MacOS (core i7)</td>
 <td>0.8-0.9 FPS (cpu)</td>
 <td>Bad:  miss/false detection on the overhead view video. Not so good on the human point of view video</td>
 </tr>
-
 <tr>
 <td>Faster RCNN(gluoncv)</td>
 <td>MacOS (core i7)</td>
 <td>~0.1 FPS (cpu)</td>
 <td>Bad:  miss/false detection on the overhead view video, Good on the human point of view video</td>
 </tr>
-
 <tr>
 <td>Center net (gluoncv)</td>
 <td>MacOS (core i7)</td>
 <td>0.3 - 0.4 FPS (cpu)</td>
 <td>Bad:  miss/false detection on the overhead view video, Good on the human point of view video</td>
 </tr>
-
 <tr>
 <td>mask_rcnn_inception_v2 (openCV)</td>
 <td>MacOS (core i7)</td>
 <td>~ 1.2 FPS - video 1, 0.7-0.8 FPS (cpu) - video 2</td>
 <td>Quite good:  Some miss/false detection on the overhead view video, good on the human point of view video</td>
 </tr>
-
 <tr>
 <td>ssd_mobilenet_v1 (openCV)</td>
 <td>MacOS (core i7)</td>
 <td>~3 FPS - video 1, 1.2 FPS (cpu) - video 2</td>
 <td>Bad:  miss/false detection on both videos</td>
 </tr>
-
 <tr>
 <td>MobileNetSSD_deploy (openCV)</td>
 <td>MacOS (core i7)</td>
 <td>~ 20 FPS (cpu)</td>
 <td>Very bad</td>
 </tr>
-
 <tr>
 <td>Yolov4 (openCV)</td>
 <td>Jetson TX2</td>
 <td>~ 0.25 FPS (cpu), ~ 2 FPS(GPU)</td>
 <td>Same accuracy as running on my Macbook</td>
 </tr>
-
 <tr>
 <td>Yolov4 (TensorRT)</td>
 <td>Jetson TX2</td>
