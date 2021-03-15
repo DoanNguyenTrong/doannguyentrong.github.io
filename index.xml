@@ -8,7 +8,7 @@
     <language>en-us</language>
     <managingEditor>nguyentrongdoan.0@gmail.com (Doan Nguyen)</managingEditor>
     <webMaster>nguyentrongdoan.0@gmail.com (Doan Nguyen)</webMaster>
-    <lastBuildDate>Mon, 04 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://doannguyentrong.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://doannguyentrong.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Giới thiệu về Machine Learning</title>
       <link>https://doannguyentrong.github.io/mayhoc/introduction/</link>
@@ -17,6 +17,16 @@
       <guid>https://doannguyentrong.github.io/mayhoc/introduction/</guid>
       <description>Giới thiệu chung Định nghĩa: Machine Learning(ML) là một nhánh của ngành khoa học máy tính (Computer Science) tập trung sử dụng các phương pháp thống kê (Statistical techniques) để trao cho các hệ thống tính toán (máy tính) khả năng &amp;ldquo;học hỏi&amp;rdquo; từ tập dữ liệu (data) mà không cần phải được lập trình một cách chuyên biệt.
 Theo định nghĩa trên bạn nên chú ý rằng khả năng &amp;ldquo;học hỏi&amp;rdquo; của các thuật toán ML dựa trên một loạt các phép toán thống kê xác suất và các quyết định/dự đoán do thuật toán đưa ra hoàn toàn phụ thuộc vào dữ liệu (data) đã thu thập được.</description>
+    </item>
+    
+    <item>
+      <title>Inference on edge: tensorflow lite C&#43;&#43; and GPU/CPU/Hexagon DSP</title>
+      <link>https://doannguyentrong.github.io/posts/tensorflow-lite-object-detection-cpp/</link>
+      <pubDate>Sun, 14 Mar 2021 00:00:00 +0000</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/tensorflow-lite-object-detection-cpp/</guid>
+      <description>Introduction As one of 10 winning startups of the Qualcomm Vietnam Innovative Challenge 2020, I have the chance to use the Qualcomm RB5 board to deploy our autonomous driving system for Automated Guided Vehicles (AGV). If you don&amp;rsquo;t know about AGV and the challenge, you can quickly found a good explanation using Google search.
+The main reason which urges me to write this post is that there is a limited number of tutorials you can found online on how to use TensorFlow lite C++ even the homepage of the TensorFlow package.</description>
     </item>
     
     <item>
