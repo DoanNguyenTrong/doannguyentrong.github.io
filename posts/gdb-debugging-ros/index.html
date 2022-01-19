@@ -17,12 +17,11 @@
   
   <link rel="stylesheet" href="https://doannguyentrong.github.io/plugins/style.css ">
   
-
   <!--Favicon-->
   
   
   <link rel="icon" href="https://doannguyentrong.github.io/images/favicon.png " type="image/x-icon">
-  <title>A decentralized network of cameras for occupancy density estimation </title>
+  <title>GDB - To debug your C&#43;&#43; ROS code more efficient </title>
 </head><body><header> 
   
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
@@ -59,18 +58,6 @@
                 </li>
                 
                 
-                
-                <li class="nav-item">
-                  <a class="nav-link" href="https://doannguyentrong.github.io/youtube">Youtube</a>
-                </li>
-                
-                
-                
-                <li class="nav-item">
-                  <a class="nav-link" href="https://doannguyentrong.github.io/mayhoc">Máy học</a>
-                </li>
-                
-                
               </ul>
           </div>
 
@@ -83,20 +70,42 @@
   <div class="row welcome">
       <div class="col-12">
           
-          <h3 class="font-tertiary mb-5 text-center">A decentralized network of cameras for occupancy density estimation</h3>
+          <h3 class="font-tertiary mb-5 text-center">GDB - To debug your C&#43;&#43; ROS code more efficient</h3>
           <div class=" align-center">
             <img src="https://doannguyentrong.github.io/images/author.png" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
-          <p class="font-secondary">Published on Dec 17, 2020 by <span class="text-primary">Doan Nguyen</span></p>
+          <p class="font-secondary">Published on Jan 18, 2022 by <span class="text-primary">Doan Nguyen</span></p>
           </div>
           <div class="content text-justify post-text">
             <img class="img-fluid" style="max-width: 100%; height: auto;"  >
-            
+            <p>In general, <code>gbd</code> is a very powerful tool for debugging C++ at runtime. In order to use it as you are developing your C++ ROS code, you need to do some extra steps.</p>
+<p><em>I actually learned this trick from a colleague, and want to save it for future use by writing this post.</em></p>
+<p>Step 1: Compile your code in debug mode.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">catkin build your_ros_pkg -DCMAKE_BUILD_TYPE<span style="color:#f92672">=</span>Debug</code></pre></div>
+Step 2: Run your node with <code>gdb</code>. The easiest way is to create a launch file for your node, similar to the below sample
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;launch&gt;</span>
+    <span style="color:#75715e">&lt;!-- &lt;arg name=&#34;launch_prefix&#34;         default=&#34;&#34;/&gt; --&gt;</span>
+    <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;launch_prefix&#34;</span>         <span style="color:#a6e22e">default=</span><span style="color:#e6db74">&#34;gdb -ex run -args&#34;</span><span style="color:#f92672">/&gt;</span>
+    <span style="color:#f92672">&lt;node</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;mpc_controller_node&#34;</span> 
+            <span style="color:#a6e22e">pkg=</span><span style="color:#e6db74">&#34;mpc_controller_ros&#34;</span> 
+            <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;mpc_controller_node&#34;</span> 
+            <span style="color:#a6e22e">output=</span><span style="color:#e6db74">&#34;screen&#34;</span>  <span style="color:#a6e22e">launch-prefix=</span><span style="color:#e6db74">&#34;$(arg launch_prefix)&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;rosparam</span> <span style="color:#a6e22e">file=</span><span style="color:#e6db74">&#34;$(find mpc_controller_ros)/params/mpc_controller_params.yaml&#34;</span> <span style="color:#a6e22e">command=</span><span style="color:#e6db74">&#34;load&#34;</span> <span style="color:#f92672">/&gt;</span>
+    <span style="color:#f92672">&lt;/node&gt;</span>
+<span style="color:#f92672">&lt;/launch&gt;</span></code></pre></div></p>
+<p>Step 3: There NO step 3. So simple, right?</p>
 
-<h2 id="introduction">Introduction</h2>
-
-<p>using mqtt protocol, mosquitto broker, and sql central database</p>
-
+            <div id="disqus_thread"></div> 
+<script>
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://doannguyen.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </div>
+        
       </div>
   </div>     
 </div>

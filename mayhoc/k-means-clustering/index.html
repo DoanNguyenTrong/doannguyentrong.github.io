@@ -17,7 +17,6 @@
   
   <link rel="stylesheet" href="https://doannguyentrong.github.io/plugins/style.css ">
   
-
   <!--Favicon-->
   
   
@@ -201,12 +200,12 @@ hàm khoảng cách:</p>
 Chúng ta có 3 giá trị của 3 nhóm khi \(j=1 \cdots 3\), do đó hàm
 tổng khoảng cách từ 1 điểm \(\mathbf{x}_i\) đến cả 3 điểm
 \(\mathbf{c}_i\) là:</p>
-<p>\[ \sum\limits_{j = 1}^k {d\left( {{{\bf{x}}_i},{{\bf{c}}_j}} \right)}  = \sum\limits_{j = 1}^k {\left| {{{\bf{x}}_i} - {{\bf{c}}_j}} \right|_2^2}\]</p>
+<p>\[ \sum\limits_{j = 1}^k {d\left( {{{\bf{x}}_i},{{\bf{c}}<em>j}} \right)}  = \sum\limits</em>{j = 1}^k {\left| {{{\bf{x}}_i} - {{\bf{c}}_j}} \right|_2^2}\]</p>
 <p>ở đây \(k=3\) là số clusters, như đã được định nghĩa ở trên.
 Đến đây, chúng ta đã tính được khoảng cách từ 1 điểm
 \(\mathbf{x}_i\), nhưng vì chúng ta có tất cả 50 thành viên trong
 lớp, do đó, hàm khoảng cách cần phải nâng cấp lên 1 lần nữa.</p>
-<p>\[ \sum\limits_{i = 1}^m {\sum\limits_{j = 1}^k {d\left( {{{\bf{x}}_i},{{\bf{c}}_j}} \right)} }  = \sum\limits_{i = 1}^m {\sum\limits_{j = 1}^k {\left| {{{\bf{x}}_i} - {{\bf{c}}_j}} \right|_2^2} }\]</p>
+<p>\[ \sum\limits_{i = 1}^m {\sum\limits_{j = 1}^k {d\left( {{{\bf{x}}<em>i},{{\bf{c}}<em>j}} \right)} }  = \sum\limits</em>{i = 1}^m {\sum\limits</em>{j = 1}^k {\left| {{{\bf{x}}_i} - {{\bf{c}}_j}} \right|_2^2} }\]</p>
 <p>\(m=50\) là số sample trong data hay số thành viên trong lớp.</p>
 <p>Đến đây, chúng ta đã có một hàm có thể ước lượng được ưu nhược điểm
 của \(\mathbf{c}_j\). Càng chọn \(\mathbf{c}_j\) sao cho hàm
@@ -214,7 +213,7 @@ trên có giá trị càng nhỏ, thuật toán càng tốt hơn. Khi mà giá t
 \(\mathbf{x}_i\) là cố định thì <strong>PHƯƠNG PHÁP CHỌN</strong>
 \(\mathbf{c}_j\) là trung tâm của thuật toán k-Means Clustering.
 Bây giờ, ta có thể đặt:</p>
-<p>\[ J = \sum\limits_{i = 1}^m {\sum\limits_{j = 1}^k {d\left( {{{\bf{x}}_i},{{\bf{c}}_j}} \right)} }  = \sum\limits_{i = 1}^m {\sum\limits_{j = 1}^k {\left| {{{\bf{x}}_i} - {{\bf{c}}_j}} \right|_2^2} }\]</p>
+<p>\[ J = \sum\limits_{i = 1}^m {\sum\limits_{j = 1}^k {d\left( {{{\bf{x}}<em>i},{{\bf{c}}<em>j}} \right)} }  = \sum\limits</em>{i = 1}^m {\sum\limits</em>{j = 1}^k {\left| {{{\bf{x}}_i} - {{\bf{c}}_j}} \right|_2^2} }\]</p>
 <p>là hàm mục tiêu (objective function) hay hàm phí tổn (cost function)
 cho bài toán.
 Và thuật toán k-Means Clustering đi tìm giá trị cực tiểu:</p>

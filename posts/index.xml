@@ -10,6 +10,17 @@
     <webMaster>nguyentrongdoan.0@gmail.com (Doan Nguyen)</webMaster>
     <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate><atom:link href="https://doannguyentrong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>GDB - To debug your C&#43;&#43; ROS code more efficient</title>
+      <link>https://doannguyentrong.github.io/posts/gdb-debugging-ros/</link>
+      <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
+      <author>nguyentrongdoan.0@gmail.com (Doan Nguyen)</author>
+      <guid>https://doannguyentrong.github.io/posts/gdb-debugging-ros/</guid>
+      <description>In general, gbd is a very powerful tool for debugging C++ at runtime. In order to use it as you are developing your C++ ROS code, you need to do some extra steps.
+I actually learned this trick from a colleague, and want to save it for future use by writing this post.
+Step 1: Compile your code in debug mode. catkin build your_ros_pkg -DCMAKE_BUILD_TYPE=Debug Step 2: Run your node with gdb.</description>
+    </item>
+    
+    <item>
       <title>Inference on edge: tensorflow lite C&#43;&#43; and GPU/CPU/Hexagon DSP</title>
       <link>https://doannguyentrong.github.io/posts/tensorflow-lite-object-detection-cpp/</link>
       <pubDate>Sun, 14 Mar 2021 00:00:00 +0000</pubDate>
