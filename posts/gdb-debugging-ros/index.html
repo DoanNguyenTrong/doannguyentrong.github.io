@@ -79,9 +79,9 @@
             <img class="img-fluid" style="max-width: 100%; height: auto;"  >
             <p>In general, <code>gbd</code> is a very powerful tool for debugging C++ at runtime. In order to use it as you are developing your C++ ROS code, you need to do some extra steps.</p>
 <p><em>I actually learned this trick from a colleague, and want to save it for future use by writing this post.</em></p>
-<p>Step 1: Compile your code in debug mode.
+<p><strong>Step 1</strong>: Compile your code in debug mode.
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">catkin build your_ros_pkg -DCMAKE_BUILD_TYPE<span style="color:#f92672">=</span>Debug</code></pre></div>
-Step 2: Run your node with <code>gdb</code>. The easiest way is to create a launch file for your node, similar to the below sample
+<strong>Step 2</strong>: Run your node with <code>gdb</code>. The easiest way is to create a launch file for your node, similar to the below sample
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;launch&gt;</span>
     <span style="color:#75715e">&lt;!-- &lt;arg name=&#34;launch_prefix&#34;         default=&#34;&#34;/&gt; --&gt;</span>
     <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;launch_prefix&#34;</span>         <span style="color:#a6e22e">default=</span><span style="color:#e6db74">&#34;gdb -ex run -args&#34;</span><span style="color:#f92672">/&gt;</span>
@@ -92,7 +92,13 @@ Step 2: Run your node with <code>gdb</code>. The easiest way is to create a laun
         <span style="color:#f92672">&lt;rosparam</span> <span style="color:#a6e22e">file=</span><span style="color:#e6db74">&#34;$(find mpc_controller_ros)/params/mpc_controller_params.yaml&#34;</span> <span style="color:#a6e22e">command=</span><span style="color:#e6db74">&#34;load&#34;</span> <span style="color:#f92672">/&gt;</span>
     <span style="color:#f92672">&lt;/node&gt;</span>
 <span style="color:#f92672">&lt;/launch&gt;</span></code></pre></div></p>
-<p>Step 3: There NO step 3. So simple, right?</p>
+<p><strong>Step 3</strong>: There NO step 3. So simple, right?</p>
+<p><strong>Update 03/31/2022</strong>: Some common <code>gdp</code> commands I often use:</p>
+<ul>
+<li><code>bt</code> - backtrace</li>
+<li><code>where</code> - where the execution currently at (the error occurs)</li>
+</ul>
+<p><em>I don&rsquo;t use <code>gdb</code> extensively, so explore yourself and have fun learning</em></p>
 
             <div id="disqus_thread"></div> 
 <script>
