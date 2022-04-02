@@ -114,25 +114,25 @@
 <p>Object localization:</p>
 <ul>
 <li>Create object: <code>LZ = Localizer([x0, y0], [xt, yt])</code>. Here, [x0 , y0] are x and y lists of 4 original points and [xt, yt] are x and y of 4 corresponding points that will be used for the perspective transformation algorithm <code>cv2.getPerspectiveTransform()</code>. This step allows us to get a transformation matrix that can convert from camera&rsquo;s  to top-down view point. Then we can approximate the true location of people in the area.\
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">  <span style="color:#75715e"># Example</span>
-  <span style="color:#75715e"># Original</span>
-  xo <span style="color:#f92672">=</span> [<span style="color:#ae81ff">334</span>, <span style="color:#ae81ff">165</span>, <span style="color:#ae81ff">931</span>, <span style="color:#ae81ff">1117</span>]
-  yo <span style="color:#f92672">=</span> [<span style="color:#ae81ff">180</span>, <span style="color:#ae81ff">591</span>, <span style="color:#ae81ff">171</span>, <span style="color:#ae81ff">571</span>]
-  <span style="color:#75715e"># Transformed</span>
-  xt <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">600</span>, <span style="color:#ae81ff">600</span>]
-  yt <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">600</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">600</span>]
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span>  <span style="color:#75715e"># Example</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Original</span>
+</span></span><span style="display:flex;"><span>  xo <span style="color:#f92672">=</span> [<span style="color:#ae81ff">334</span>, <span style="color:#ae81ff">165</span>, <span style="color:#ae81ff">931</span>, <span style="color:#ae81ff">1117</span>]
+</span></span><span style="display:flex;"><span>  yo <span style="color:#f92672">=</span> [<span style="color:#ae81ff">180</span>, <span style="color:#ae81ff">591</span>, <span style="color:#ae81ff">171</span>, <span style="color:#ae81ff">571</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Transformed</span>
+</span></span><span style="display:flex;"><span>  xt <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">600</span>, <span style="color:#ae81ff">600</span>]
+</span></span><span style="display:flex;"><span>  yt <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">600</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">600</span>]
+</span></span></code></pre></div></li>
 <li>Extract raw locations: <code>raw_locs = LZ.raw_location(bbox, offset=[0,0])</code>. Here we assume that the location of one object is at the middle of bottom edge of a bounding box. You can tune it by specify <code>offset</code> for both x and y axes.</li>
 <li>True locations: <code>true_locs = LZ.actual_location(IDs, scores, raw_locs, clss= None)</code>. You need to provide list of IDs and scores so that the method can extract these information corresponding to each location. If you want to filters only interested classed, change <code>clss</code> to a list of IDs (e.g., <code>clss=[0, 14]</code>).</li>
 <li>Draw: <code>LZ.draw_locs(img, true_locs, radius, thickness, color)</code> to draw a circle at <code>true_locs</code></li>
 </ul>
 <h3 id="some-commands-to-use-examplepy">Some commands to use <code>example.py</code></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">python3 example.py
-
-python3 example.py --type caffe --loc /model_zoo/caffe/ --m MobileNetSSD_deploy --video videos/demo2.mp4
-
-python3 example.py --type tf --loc /model_zoo/tensorflow/ --m mask_rcnn_inception_v2_coco_2018_01_28 --video videos/demo2.mp4
-</code></pre></div><h3 id="benchmark">Benchmark</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 example.py
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>python3 example.py --type caffe --loc /model_zoo/caffe/ --m MobileNetSSD_deploy --video videos/demo2.mp4
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>python3 example.py --type tf --loc /model_zoo/tensorflow/ --m mask_rcnn_inception_v2_coco_2018_01_28 --video videos/demo2.mp4
+</span></span></code></pre></div><h3 id="benchmark">Benchmark</h3>
 <p>I have tested the inference on some scenarios and here is a quick summary. When you enable <code>GPU</code> inference, the speed is increased roughly <code>8X</code>. Also, I have some tests using TensorRT, and it significant improvement is very interesting.
 You can see that I did test <code>gluoncv</code> - a handy package that comes with some pre-trained models, but it performance is very poor.</p>
 <table>

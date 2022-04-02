@@ -109,68 +109,68 @@ It would also be useful for one who wants to use TensorFlow lite on any other bo
 <ul>
 <li><a href="https://www.tensorflow.org/lite/guide/build_arm64">Install tensorflow</a> into your board and your host computer. You should have tensorflow on your computer to compile needed libraries that will be used by tensorflow lite. Do it on the board is not a good choice although you definitely can.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/tensorflow/tensorflow.git
-cd tensorflow
-<span style="color:#75715e"># Use the latest</span>
-<span style="color:#75715e">#git branch r2.1 remotes/origin/r2.1</span>
-<span style="color:#75715e">#git checkout r2.1</span>
-./tensorflow/lite/tools/make/download_dependencies.sh
-./tensorflow/lite/tools/make/build_aarch64_lib.sh
-
-<span style="color:#75715e">#./tensorflow/lite/tools/make/build_generic_aarch64_lib.sh</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/tensorflow/tensorflow.git
+</span></span><span style="display:flex;"><span>cd tensorflow
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Use the latest</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#git branch r2.1 remotes/origin/r2.1</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#git checkout r2.1</span>
+</span></span><span style="display:flex;"><span>./tensorflow/lite/tools/make/download_dependencies.sh
+</span></span><span style="display:flex;"><span>./tensorflow/lite/tools/make/build_aarch64_lib.sh
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#./tensorflow/lite/tools/make/build_generic_aarch64_lib.sh</span></span></span></code></pre></div>
 <p>If you are using an RPi, you should run the sh file tailored for it (which is placed in <code>tensorflow/lite/tools/make/</code>).</p>
 <ul>
 <li><a href="https://developer.qualcomm.com/project/object-detection-tensorflow-lite">Install opencv</a> onto the board. Pay attention to the comments I place above each command!!!</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install build-essential curl unzip
-sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
-sudo apt-get install libjpeg-dev libpng-dev
-sudo apt-get install python-numpy libxkbcommon-dev 
-sudo apt install -y g++ wget unzip
-<span style="color:#75715e"># If you use wayland to display opencv output</span>
-sudo apt-get install libwayland-client0 libwayland-dev
-
-<span style="color:#75715e"># Go to your working directory</span>
-<span style="color:#75715e"># You dont need to strictly follow the below step</span>
-mkdir /home/src
-cd /home/src
-
-<span style="color:#75715e"># If you use wayland</span>
-git clone https://github.com/pfpacket/opencv-wayland.git
-cd opencv-wayland/
-<span style="color:#75715e"># Or you use lastest opencv</span>
-<span style="color:#75715e"># Download and unpack sources</span>
-wget -O opencv.zip https://github.com/opencv/opencv/archive/master.zip
-wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/master.zip
-unzip opencv.zip
-unzip opencv_contrib.zip
-
-<span style="color:#75715e"># Create build directory and switch into it</span>
-mkdir -p build <span style="color:#f92672">&amp;&amp;</span> cd build
-
-<span style="color:#75715e"># Note: You can modify the flags as you want</span>
-<span style="color:#75715e"># Build opencv (latest version)</span>
-cmake -D CMAKE_BUILD_TYPE<span style="color:#f92672">=</span>Debug -D CMAKE_INSTALL_PREFIX<span style="color:#f92672">=</span>/usr/local -DWITH_IPP<span style="color:#f92672">=</span>OFF -DWITH_WAYLAND<span style="color:#f92672">=</span>ON -DWITH_GTK<span style="color:#f92672">=</span>OFF -DWITH_GSTREAMER<span style="color:#f92672">=</span>ON -DBUILD_opencv_python3<span style="color:#f92672">=</span>yes ..
-
-make -j7 <span style="color:#f92672">&amp;&amp;</span> make install
-
-<span style="color:#75715e"># Build opencv (latest version)</span>
-cmake -DCMAKE_INSTALL_PREFIX<span style="color:#f92672">=</span>/usr/local -DOPENCV_EXTRA_MODULES_PATH<span style="color:#f92672">=</span>../../opencv_contrib-master/modules -DWITH_IPP<span style="color:#f92672">=</span>OFF -DWITH_GSTREAMER<span style="color:#f92672">=</span>ON -DWITH_GTK<span style="color:#f92672">=</span>OFF -DWITH_WAYLAND<span style="color:#f92672">=</span>ON -DBUILD_opencv_python3<span style="color:#f92672">=</span>yes ..
-
-make -j7 <span style="color:#f92672">&amp;&amp;</span> make install</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install build-essential curl unzip
+</span></span><span style="display:flex;"><span>sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+</span></span><span style="display:flex;"><span>sudo apt-get install libjpeg-dev libpng-dev
+</span></span><span style="display:flex;"><span>sudo apt-get install python-numpy libxkbcommon-dev 
+</span></span><span style="display:flex;"><span>sudo apt install -y g++ wget unzip
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># If you use wayland to display opencv output</span>
+</span></span><span style="display:flex;"><span>sudo apt-get install libwayland-client0 libwayland-dev
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Go to your working directory</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># You dont need to strictly follow the below step</span>
+</span></span><span style="display:flex;"><span>mkdir /home/src
+</span></span><span style="display:flex;"><span>cd /home/src
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># If you use wayland</span>
+</span></span><span style="display:flex;"><span>git clone https://github.com/pfpacket/opencv-wayland.git
+</span></span><span style="display:flex;"><span>cd opencv-wayland/
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Or you use lastest opencv</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Download and unpack sources</span>
+</span></span><span style="display:flex;"><span>wget -O opencv.zip https://github.com/opencv/opencv/archive/master.zip
+</span></span><span style="display:flex;"><span>wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/master.zip
+</span></span><span style="display:flex;"><span>unzip opencv.zip
+</span></span><span style="display:flex;"><span>unzip opencv_contrib.zip
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create build directory and switch into it</span>
+</span></span><span style="display:flex;"><span>mkdir -p build <span style="color:#f92672">&amp;&amp;</span> cd build
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Note: You can modify the flags as you want</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Build opencv (latest version)</span>
+</span></span><span style="display:flex;"><span>cmake -D CMAKE_BUILD_TYPE<span style="color:#f92672">=</span>Debug -D CMAKE_INSTALL_PREFIX<span style="color:#f92672">=</span>/usr/local -DWITH_IPP<span style="color:#f92672">=</span>OFF -DWITH_WAYLAND<span style="color:#f92672">=</span>ON -DWITH_GTK<span style="color:#f92672">=</span>OFF -DWITH_GSTREAMER<span style="color:#f92672">=</span>ON -DBUILD_opencv_python3<span style="color:#f92672">=</span>yes ..
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>make -j7 <span style="color:#f92672">&amp;&amp;</span> make install
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Build opencv (latest version)</span>
+</span></span><span style="display:flex;"><span>cmake -DCMAKE_INSTALL_PREFIX<span style="color:#f92672">=</span>/usr/local -DOPENCV_EXTRA_MODULES_PATH<span style="color:#f92672">=</span>../../opencv_contrib-master/modules -DWITH_IPP<span style="color:#f92672">=</span>OFF -DWITH_GSTREAMER<span style="color:#f92672">=</span>ON -DWITH_GTK<span style="color:#f92672">=</span>OFF -DWITH_WAYLAND<span style="color:#f92672">=</span>ON -DBUILD_opencv_python3<span style="color:#f92672">=</span>yes ..
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>make -j7 <span style="color:#f92672">&amp;&amp;</span> make install</span></span></code></pre></div>
 <p>the library is installed to <code>/usr/local/include/opencv/</code></p>
 <ul>
 <li>Extra: Install freetype2, weston/wayland (in my case)
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install -y freetype2-demos
-sudo apt-get update <span style="color:#f92672">&amp;&amp;</span> sudo apt-get install weston xwayland</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install -y freetype2-demos
+</span></span><span style="display:flex;"><span>sudo apt-get update <span style="color:#f92672">&amp;&amp;</span> sudo apt-get install weston xwayland</span></span></code></pre></div>
 <strong>Note</strong>: You don&rsquo;t need to install reetype2 and weston/wayland if you are working on Jetson or RPi boards.</li>
 </ul>
 <h2 id="compile-needed-libraries">Compile needed libraries</h2>
 <ul>
 <li>Build needed libraries on the host machine
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bazel build --config<span style="color:#f92672">=</span>elinux_aarch64 -c opt --copt -DMESA_EGL_NO_X11_HEADERS --copt -DEGL_NO_X11 tensorflow/lite/delegates/gpu:libtensorflowlite_gpu_delegate.so
-
-bazel build --config<span style="color:#f92672">=</span>elinux_aarch64 -c opt //tensorflow/lite/delegates/hexagon:hexagon_delegate_kernel</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>bazel build --config<span style="color:#f92672">=</span>elinux_aarch64 -c opt --copt -DMESA_EGL_NO_X11_HEADERS --copt -DEGL_NO_X11 tensorflow/lite/delegates/gpu:libtensorflowlite_gpu_delegate.so
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>bazel build --config<span style="color:#f92672">=</span>elinux_aarch64 -c opt //tensorflow/lite/delegates/hexagon:hexagon_delegate_kernel</span></span></code></pre></div>
 You will need to build multiple libraries as tensorflow lite separated into various components.
 Here, I have compiled and placed the libraries into <code>WORKING_DIR/tflite/</code> so that you can use them right away.</li>
 </ul>
@@ -178,43 +178,43 @@ Here, I have compiled and placed the libraries into <code>WORKING_DIR/tflite/</c
 <ul>
 <li>
 <p>If you get this error:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>100%<span style="color:#f92672">]</span> Linking CXX executable webcam-detector
-../tflite/libhexagon_delegate.so: undefined reference to <span style="color:#e6db74">`</span>vtable <span style="color:#66d9ef">for</span> tflite::HexagonDelegateKernel<span style="color:#960050;background-color:#1e0010">&#39;</span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>100%<span style="color:#f92672">]</span> Linking CXX executable webcam-detector
+</span></span><span style="display:flex;"><span>../tflite/libhexagon_delegate.so: undefined reference to <span style="color:#e6db74">`</span>vtable <span style="color:#66d9ef">for</span> tflite::HexagonDelegateKernel<span style="color:#960050;background-color:#1e0010">&#39;</span></span></span></code></pre></div></p>
 </li>
 <li>
 <p>Copy the function <code>HexagonDelegateKernel()</code> into your <code>main.cxx</code>. Right click -&gt; Go to Definition (using VSCode IDE in my case). You will find that this function is defined in <code>tensorflow/tensorflow/lite/delegates/hexagon/hexagon_delegate_kernel.h</code>. You need to open the <code>BUILD</code> file in the same repo (<code>tensorflow/tensorflow/lite/delegates/hexagon/BUILD</code>) and find the <code>cc_library</code> that linked with the file and compile it.
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bazel build --config<span style="color:#f92672">=</span>elinux_aarch64 -c opt //tensorflow/lite/delegates/hexagon:hexagon_delegate_kernel</code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>bazel build --config<span style="color:#f92672">=</span>elinux_aarch64 -c opt //tensorflow/lite/delegates/hexagon:hexagon_delegate_kernel</span></span></code></pre></div></p>
 </li>
 <li>
 <p>Structure of the command:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bazel build --config<span style="color:#f92672">=</span>elinux_aarch64 -c opt TO_REPO:LIBRARY_NAME</code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>bazel build --config<span style="color:#f92672">=</span>elinux_aarch64 -c opt TO_REPO:LIBRARY_NAME</span></span></code></pre></div></p>
 </li>
 <li>
 <p>Clone this repo, compile and run
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/DoanNguyenTrong/object-detection-tflite-cpp.git
-cd object-detection-tflite-cpp/
-./compile.sh
-./object-detector <span style="color:#ae81ff">0</span> dev/video0</code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/DoanNguyenTrong/object-detection-tflite-cpp.git
+</span></span><span style="display:flex;"><span>cd object-detection-tflite-cpp/
+</span></span><span style="display:flex;"><span>./compile.sh
+</span></span><span style="display:flex;"><span>./object-detector <span style="color:#ae81ff">0</span> dev/video0</span></span></code></pre></div></p>
 </li>
 </ul>
 <h2 id="api-explanation">API explanation</h2>
 <ul>
 <li>Initiallize:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">ObjectDetector <span style="color:#a6e22e">detector</span>(modelfile, labelfile);
-detector.readLabels();
-detector.readModel();
-detector.configure(<span style="color:#ae81ff">4</span>, delegate_option);</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>ObjectDetector <span style="color:#a6e22e">detector</span>(modelfile, labelfile);
+</span></span><span style="display:flex;"><span>detector.readLabels();
+</span></span><span style="display:flex;"><span>detector.readModel();
+</span></span><span style="display:flex;"><span>detector.configure(<span style="color:#ae81ff">4</span>, delegate_option);</span></span></code></pre></div></li>
 </ul>
 <p><code>modelfile</code> and <code>labelfile</code> are two strings that point to a delegated model and a label file. <code>4</code> is the number of threads will be used and <code>delegate_option</code> defines which hardware will be used for acceleration(<code>0</code>-GPU and <code>1</code>-Hexagon DSP);</p>
 <ul>
 <li>Inference and extract objects using NMS method</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">int</span> state <span style="color:#f92672">=</span> detector.inference(frame);
-<span style="color:#66d9ef">if</span> (state <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>){
-    exit(<span style="color:#ae81ff">0</span>);
-}
-
-std<span style="color:#f92672">::</span>vector<span style="color:#f92672">&lt;</span>Object<span style="color:#f92672">&gt;</span> objects <span style="color:#f92672">=</span> detector.extractObjects(<span style="color:#ae81ff">0.3f</span>, <span style="color:#ae81ff">0.5f</span>);</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> state <span style="color:#f92672">=</span> detector.inference(frame);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (state <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>){
+</span></span><span style="display:flex;"><span>    exit(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>std<span style="color:#f92672">::</span>vector<span style="color:#f92672">&lt;</span>Object<span style="color:#f92672">&gt;</span> objects <span style="color:#f92672">=</span> detector.extractObjects(<span style="color:#ae81ff">0.3f</span>, <span style="color:#ae81ff">0.5f</span>);</span></span></code></pre></div>
 <p><code>0.3f</code> is the score threshold and <code>0.5f</code> is the NMS&rsquo;s threshold.</p>
 <ul>
 <li>For more information, please take a look into my code.</li>

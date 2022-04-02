@@ -80,18 +80,18 @@
             <p>In general, <code>gbd</code> is a very powerful tool for debugging C++ at runtime. In order to use it as you are developing your C++ ROS code, you need to do some extra steps.</p>
 <p><em>I actually learned this trick from a colleague, and want to save it for future use by writing this post.</em></p>
 <p><strong>Step 1</strong>: Compile your code in debug mode.
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">catkin build your_ros_pkg -DCMAKE_BUILD_TYPE<span style="color:#f92672">=</span>Debug</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>catkin build your_ros_pkg -DCMAKE_BUILD_TYPE<span style="color:#f92672">=</span>Debug</span></span></code></pre></div>
 <strong>Step 2</strong>: Run your node with <code>gdb</code>. The easiest way is to create a launch file for your node, similar to the below sample
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;launch&gt;</span>
-    <span style="color:#75715e">&lt;!-- &lt;arg name=&#34;launch_prefix&#34;         default=&#34;&#34;/&gt; --&gt;</span>
-    <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;launch_prefix&#34;</span>         <span style="color:#a6e22e">default=</span><span style="color:#e6db74">&#34;gdb -ex run -args&#34;</span><span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;node</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;mpc_controller_node&#34;</span> 
-            <span style="color:#a6e22e">pkg=</span><span style="color:#e6db74">&#34;mpc_controller_ros&#34;</span> 
-            <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;mpc_controller_node&#34;</span> 
-            <span style="color:#a6e22e">output=</span><span style="color:#e6db74">&#34;screen&#34;</span>  <span style="color:#a6e22e">launch-prefix=</span><span style="color:#e6db74">&#34;$(arg launch_prefix)&#34;</span><span style="color:#f92672">&gt;</span>
-        <span style="color:#f92672">&lt;rosparam</span> <span style="color:#a6e22e">file=</span><span style="color:#e6db74">&#34;$(find mpc_controller_ros)/params/mpc_controller_params.yaml&#34;</span> <span style="color:#a6e22e">command=</span><span style="color:#e6db74">&#34;load&#34;</span> <span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;/node&gt;</span>
-<span style="color:#f92672">&lt;/launch&gt;</span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;launch&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- &lt;arg name=&#34;launch_prefix&#34;         default=&#34;&#34;/&gt; --&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;arg</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;launch_prefix&#34;</span>         <span style="color:#a6e22e">default=</span><span style="color:#e6db74">&#34;gdb -ex run -args&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;node</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;mpc_controller_node&#34;</span> 
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">pkg=</span><span style="color:#e6db74">&#34;mpc_controller_ros&#34;</span> 
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;mpc_controller_node&#34;</span> 
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">output=</span><span style="color:#e6db74">&#34;screen&#34;</span>  <span style="color:#a6e22e">launch-prefix=</span><span style="color:#e6db74">&#34;$(arg launch_prefix)&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;rosparam</span> <span style="color:#a6e22e">file=</span><span style="color:#e6db74">&#34;$(find mpc_controller_ros)/params/mpc_controller_params.yaml&#34;</span> <span style="color:#a6e22e">command=</span><span style="color:#e6db74">&#34;load&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/node&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/launch&gt;</span></span></span></code></pre></div></p>
 <p><strong>Step 3</strong>: There NO step 3. So simple, right?</p>
 <p><strong>Update 03/31/2022</strong>: Some common <code>gdp</code> commands I often use:</p>
 <ul>
